@@ -1,0 +1,356 @@
+
+h1 {
+	color:#72A1E5;
+	text-align:center;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+	text-transform:#72A1E5;
+}
+
+body,html{
+	height:100%;
+}
+body {
+  /* Location of the image */
+  background-image: url("blue.jpg");
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+#globale{
+	width:80%;
+	margin: 0 auto;
+	padding:3%;
+}
+
+header{
+	height: 7.0em;
+	background-color:#FFFFFF;
+	background-image:url("../images/fond.jpg");
+	outline-width:0em;
+	outline-color:#689AD3;
+	outline-style:solid;
+	margin:0% 0% 5% 0%;
+}
+
+figcaption{
+	text-align: center;
+	font-style: italic;
+}
+
+.containeur {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 576px) {
+	.containeur{
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.containeur{
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.containeur{
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.containeur{
+		max-width: 1140px;
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col {
+	flex-basis: 0;
+	flex-grow: 1;7position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	max-width: 100%
+}
+
+#logo{
+	float:left;
+	background-image:url(logo2.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:30%;
+	height:100%;
+}
+#nom{
+	float:right;
+	width:70%;
+	height: inherit;
+	padding: 2em 0 0 0;
+	text-align:center;
+	color:#72A1E5;
+}
+
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	outline:0;
+	transition:all 2s;
+	box-sizing: border-box;
+	font-family:Avenir, sans serif;
+}
+
+nav{
+	width: 100%;
+	margin: 0 auto;
+	background-color:grey;
+	position: sticky;
+	top: 0px;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	position: relative;
+	
+}
+
+nav ul::after{
+	content: "";
+	display:table;
+	clear: both;
+}
+
+
+nav a{
+	display: block; 
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+nav a:hover{
+	color: blue;
+	border-bottom: 2px solid blue;
+}
+
+/* -- Sous Nav -- */
+.sous{
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background-color: grey;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+
+nav > ul li:hover .sous{
+	display: block;
+}
+
+.sous li{
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+
+.sous a{
+	padding: 10px;
+	border-bottom: blue;
+}
+
+.deroulant > a::after{
+	content:" ▼";
+	font-size: 12px;
+}
+
+.sous a:hover{
+	border-bottom: blue;
+	background-color: grey;
+}
+
+.snav
+{
+	margin-top: 1%;
+	background: #FFFFFF;
+}
+
+.snav li
+{
+	line-height: 1.2em;
+	vertical-align:center;
+	font-style: italic;
+	color: white;
+	border: 1px solid black;
+	background: #888888;
+}
+
+.snav li:hover a
+{
+		color: black;
+}
+
+/* -- FIN NAV -- */
+
+#page
+{
+	min-height:10em;
+	background-color:transparent; /*#4186D3;*/ /*0D56A6*/
+	padding: 0% 5% 5% 18%;
+	text-align:left;
+	color:#5376A7;
+}
+
+section {}
+
+#sec1 {
+	/*width:80%;*/
+	margin:0;
+	outline:0;
+	border-width:0em 0em 0em 0em;
+	border-style:solid;
+	border-color: #4186D3;
+	padding:1% 0% 2% 2%;
+}
+
+section h1 {
+	margin: 2% 0% 2% 2% ;
+}
+
+section p{
+	margin: 2% 0% 2% 2% ;
+}
+
+/* ARTICLES */
+
+article {
+	background:#FFFFFF;
+}
+
+article {
+	margin: 4% 4% 2% 4%;
+	padding : 0%;
+	
+	border : solid black 1px;
+	border-width: 0.1em;
+	border-style: solid;
+	border-color: grey;
+	border-radius: 0.1em;
+	
+	box-shadow: 4px 4px 4px #aaa;
+}
+
+article h1 {
+	background: #EEEEEE;
+	padding: 3% ;
+	padding-left: 0%;
+}
+article p{
+	padding: 3% ;
+
+}
+
+article video,audio
+{
+	margin: 2%;
+	max-width: 90%;
+	
+}
+
+.audio h1 {
+	background: url("../image/note.png") no-repeat #EEEEEE;
+	background-position: 2% 50%;
+	background-size: 5% 60%;
+
+}
+
+.video h1 {
+	background: url("../images/note.png") no-repeat #EEEEEE;
+	background-position: 2% 40%;
+	background-size: 5% 60%;
+	
+}
+
+/* ARTICLE*/
+
+object {
+	width:100%;
+	border:0px solid black;
+}
+
+footer {
+	clear:both;
+	
+	border-width:0em 0.2em 0.2em 0.2em;
+	border-width:0;
+	border-style:solid;
+	border-color: #4186D3;
+	
+	background:#FFFFFF;
+	opacity:1;
+	
+	text-align:center;
+}
+
+form{
+	margin:auto 10% ;
+	border: 1px solid black;
+	background-color: #CCCCCC;
+	
+	}
+fieldset {padding-left:30%; text-align:left; width:50em}
+label {float:left; width:12em; text-align:center}
+input {border: 1px solid gray;}
+input.input {
+	display:block;
+	height:2em;
+	width:12em;
+	}
+input.adresse {width:22em;}

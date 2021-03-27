@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+	  <!-- Mise en place Bootstrap -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>ePortfolio</title>
+	  <link rel="stylesheet" type="text/css" href="styleCSS/text.css" />
+	  <!-- Lien Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	  <!-- Lien Font awesome pour les icônes -->
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+<header>
+	<!-- Menu avec fond sombre -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+   <a class="navbar-brand" href="accueil.html">
+   <img src="styleCSS/logo2.png" class="rounded" style="width:120px;">
+   </a>
+    <!-- Menu -->
+   <ul class="navbar-nav">
+      <li class="nav-item">
+         <a class="nav-link" href="accueil.html"><span class="fa fa-home fa-lg"></span>Accueil</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="competences.html"><span class="fa fa-book fa-lg">Compétences</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="experiences.html"><span class="fa fa-laptop fa-lg">Expérience</a>
+      </li>
+   </ul>
+   <!-- Menu déroulant -->
+         <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><span class="fa fa-pencil fa-lg">
+               Loisirs
+               </a>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="dessins.html">Dessins</a>
+                  <a class="dropdown-item" href="musique.html">Musique</a>
+                  <a class="dropdown-item" href="natation.html">Natation</a>
+               </div>
+			   
+            </li>
+			
+         </ul>
+
+ 	<!-- Contact après le menu déroulant -->
+   <ul class="navbar-nav">
+      <li class="nav-item">
+         <a class="nav-link" href="contact.html"><span class="fa fa-address-book fa-lg">Contact</a>
+      </li>
+	</ul>
+		<!-- Titre dans le menu -->
+	    <ul class="navbar-nav">
+			<span class="navbar-text col-auto"><h1><u>AL SID CHEIKH Mehdi</u></h1></span>
+		</ul>
+
+</nav>
+	<!-- Scripts pour faire fonctionner le menu déroulant -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</header>
+     <body>
+         <div class="container">
+             <h1><u>Formulaire pour me contacter</u></h1>
+             <form>
+               <fieldset>
+			 
+                <div class="p-3 mb-2 rounded bg-light text-dark">
+                 <legend>Veuillez entrez vos informations <span class="fa fa-arrow-down fa-lg"></legend>
+				</div>
+                 <div class="form-group">
+                   <label for="nom">Entrez votre nom :</label>
+                   <input type="text" class="form-control" id="nom" placeholder="Votre nom...">
+                 </div>
+                 <div class="form-group">
+                   <label for="nom">Entrez votre prénom :</label>
+                   <input type="text" class="form-control" id="prénom" placeholder="Votre prénom...">
+                 </div>
+                 <div class="form-group">
+                   <label for="email">Entrez votre mail :</label>
+                   <input type="email" class="form-control" id="email" placeholder="Votre adresse mail...">
+                 </div>
+                 
+                 <div class="form-group">
+                   <label for="selection">Ce que vous recherchez :</label>
+                   <select id="selection" class="form-control">
+                     <option value="">Vous êtes à la recherche d'un...</option>
+                     <optgroup label="A la recherche d'un...">
+                       <option value="">Employé en CDI</option>
+                       <option value="">Employé en CDD</option>
+                       <option value="">Stagiaire</option>
+					   <option value="">Intérimaire</option>
+                     </optgroup>
+                   </select>
+                 </div>
+                 <div class="form-group">
+                   <label for="bio">Entrez votre message :</label>
+                   <textarea class="form-control" id="bio" rows="3" placeholder="Votre message..."></textarea>
+                 </div>
+               </fieldset>
+             </form>
+         </div>
+		 <div class="row">
+               <div class="container">
+					 <div class="p-3 mb-2 rounded bg-light text-dark">
+					<h4 class="text-center"> Veuillez me contactez sur mon adresse mail : <a href="mailto:mehdi.alsidcheikh@etu.parisdescartes.fr"> mehdi.alsidcheikh@etu.parisdescartes.fr</a></h4>
+					 <h4 class="text-center">Vous pouvez également me contacter sur téléphone et sur les réseaux sociaux:</h4>
+					<p class="text-center"><span class="fa fa-phone fa-lg">01 23 45 67 89</p>
+						<div class="btn-group">
+							<a class="btn btn-info" href="https://fr-fr.facebook.com/"><span class="fa fa-facebook"></span></a>
+							<a class="btn btn-danger" href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram"></span></a>
+							<a class="btn btn-warning" href="https://www.snapchat.com/l/fr-fr/"><span class="fa fa-snapchat"></span></a>
+						</div>
+               </div>
+		</div>
+    </body>
+</html>
+
+
+
+
+
