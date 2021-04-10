@@ -5,4 +5,4 @@ J'ai réalisé ce projet seul.
 
 ### Auteur :
 ```
-Mehdi Al Sid Cheikh
+Mehdi AL SID CHEIKH
